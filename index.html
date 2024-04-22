@@ -7,115 +7,174 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <!-- подключение стилей слайдера -->
+     <!-- <link
+     rel="stylesheet"
+     type="text/css"
+     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    /> -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <title>WebStudio</title>
+      <!-- стили для картинок слайдера -->
+      <!-- <style>
+     
+        .fade img {
+          width: 100%;
+          height: 500px;
+          object-fit: cover;
+          
+        }
+        .slick-prev:before{
+          color: blue;
+        }
+        .slick-next:before{
+          color: blue;
+        }
+      </style> -->
 </head>
 <body>
     <!-- blok with navigation -->
-    <header class="header top">
-       <a href="#">
-            <img src="./images/WebStudio.svg" width="145" hight="31"/>
-        </a>
-       <nav>
-            <ul class="header-list">
-                <li class="header-item">
-                    <a href="#">Студія</a>
-                </li>
-                <li class="header-item">
-                    <a href="#">Портфоліо</a>
-                </li>
-                <li class="header-item">
-                    <a href="#">Контакти</a>
-                </li>
-                <address>
-                    <a class="header-link email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="header-link phone" href="tel:+380961111111">+38 096 111 11 11</a>
-                </address>
-            </ul>
-       </nav>
+    <header class="header">
+       <div class="container">
+            <div class="header-wrapper">
+                <a href="#">
+                    <img src="./images/WebStudio.svg" width="145" hight="31"/>
+                </a>
+                <nav class="nav-wrapper">
+                    <ul class="header-list">
+                        <li class="header-item">
+                            <a href="#">Студія</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#">Портфоліо</a>
+                        </li>
+                        <li class="header-item">
+                            <a href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                        <address class="address-wrapper">
+                            <a class="header-link email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a class="header-link phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </address>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <input type="text" placeholder="Search...">
-            <h1>Ефективні рішення для вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+        <!-- section hero -->
+        <section class="hero-section">
+            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+            <button class="hero-btn" type="button">Замовити послугу</button>
         </section>
-        <section>
-            <ul>
-                <li>
-                    <img src="./images/icons/antenna.svg"/>
-                    <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
-                <li> 
-                    <img src="./images/icons/clock.svg"/>
-                    <h3>ПУНКТУАЛЬНІСТЬ</h3>
-                    <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li>
-                    <img src="./images/icons/diagram.svg"/>
-                    <h3>ПЛАНУВАННЯ</h3>
-                    <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li>
-                    <img src="./images/icons/astronaut.svg"/>
-                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>
+
+        <!-- section benefit -->
+        <section class="benefit">
+            <div class="container">
+                <h2 class="benefit-title">Переваги</h2>
+                <ul class="benefit-list">
+                    <li class="benefit-item">
+                        <div class="benefit-item_image first"></div>
+                        <h3 class="benefit-item_title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="benefit-item_text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    </li>
+                    <li class="benefit-item">
+                        <div class="benefit-item_image second"></div>
+                        <h3 class="benefit-item_title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="benefit-item_text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li> 
+                    <li class="benefit-item">
+                        <div class="benefit-item_image third"></div>
+                        <h3 class="benefit-item_title">ПЛАНУВАННЯ</h3>
+                        <p class="benefit-item_text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li> 
+                    <li class="benefit-item">
+                        <div class="benefit-item_image fourth"></div>
+                        <h3 class="benefit-item_title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="benefit-item_text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2>Чим ми займаємося</h2>
-            <ul>
-                <li>
-                    <img src="./images/img1.svg"/> 
-                </li>
-                <li>
-                    <img src="./images/img2.svg"/> 
-                </li>
-                <li>
-                    <img src="./images/img3.svg"/>
-                </li>
-            </ul>
+       
+        <!-- section about -->
+        <section class="about">
+            <div class="container">
+                <h2 class="about-title">Чим ми займаємося</h2>
+                <ul class="about-list">
+                    <li class="about-item">
+                        <img src="./images/img1.png" alt="how we work" width="370" height="294"/> 
+                    </li>
+                    <li class="about-item">
+                        <img src="./images/img2.png" alt="how we work" width="370" height="294"/> 
+                    </li>
+                    <li class="about-item">
+                        <img src="./images/img3.png" alt="how we work" width="370" height="294"/>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2></h2>
-            <ul>
-                <li>
-                    <img src="./images/img4.svg"/>
-                    <h3>Ігор Дем'яненко</h3>
-                    <p>Product Designer</p>
-                    <a href="#"><img src="images/icons/instagram.svg"/></a>
-                    <a href="#"><img src="images/icons/twitter.svg"/></a>
-                    <a href="#"><img src="images/icons/facebook.svg"/></a>
-                    <a href="#"><img src="images/icons/linkedin.svg"/></a>
-                </li>
-                <li>
-                    <img src="./images/img5.svg"/>
-                    <h3>Ольга Рєпіна</h3>
-                    <p>Frontend Developer</p>
-                    <a href="#"><img src="images/icons/instagram.svg"/></a>
-                    <a href="#"><img src="images/icons/twitter.svg"/></a>
-                    <a href="#"><img src="images/icons/facebook.svg"/></a>
-                    <a href="#"><img src="images/icons/linkedin.svg"/></a>
-                </li>
-                <li>
-                    <img src="./images/img6.svg"/>
-                    <h3>Микола Тарасов</h3>
-                    <p>Marketing</p>
-                    <a href="#"><img src="images/icons/instagram.svg"/></a>
-                    <a href="#"><img src="images/icons/twitter.svg"/></a>
-                    <a href="#"><img src="images/icons/facebook.svg"/></a>
-                    <a href="#"><img src="images/icons/linkedin.svg"/></a>
-                </li>
-                <li>
-                    <img src="./images/img7.svg"/>
-                    <h3>Михайло Єрмаков</h3>
-                    <p>UI Designer</p>
-                    <a href="#"><img src="images/icons/instagram.svg"/></a>
-                    <a href="#"><img src="images/icons/twitter.svg"/></a>
-                    <a href="#"><img src="images/icons/facebook.svg"/></a>
-                    <a href="#"><img src="images/icons/linkedin.svg"/></a>
-                </li>
+
+        <!-- section team -->
+        <section class="team">
+            <div class="container">
+                <h2 class="team-title">Наша команда</h2>
+                    <ul class="team-list">
+                        <li class="team-item">
+                            <img src="./images/img4.png" alt="Product Designer" width="270" height="260"/>
+                            <h3 class="team-item_title">Ігор Дем'яненко</h3>
+                            <p class="team-item_text">Product Designer</p>
+                            <ul class="team-item_list">
+                                <li class="team-item_item instagram">
+                                    <a href="#"></a>
+                                </li>  
+                                <li class="team-item_item twitter"> 
+                                    <a href="#"></a>
+                                </li> 
+                                <li class="team-item_item facebook">
+                                    <a href="#"></a>
+                                </li>
+                                <li class="team-item_item instagram linkedin">
+                                    <a href="#"></a>
+                                </li> 
+                            </ul>
+                        </li>
+                        <!-- <li>
+                            <img src="./images/img5.png"/>
+                            <h3>Ольга Рєпіна</h3>
+                            <p>Frontend Developer</p>
+                            <a href="#"><img src="images/icons/instagram.svg"/></a>
+                            <a href="#"><img src="images/icons/twitter.svg"/></a>
+                            <a href="#"><img src="images/icons/facebook.svg"/></a>
+                            <a href="#"><img src="images/icons/linkedin.svg"/></a>
+                        </li>
+                        <li>
+                            <img src="./images/img6.png"/>
+                            <h3>Микола Тарасов</h3>
+                            <p>Marketing</p>
+                            <a href="#"><img src="images/icons/instagram.svg"/></a>
+                            <a href="#"><img src="images/icons/twitter.svg"/></a>
+                            <a href="#"><img src="images/icons/facebook.svg"/></a>
+                            <a href="#"><img src="images/icons/linkedin.svg"/></a>
+                        </li>
+                        <li>
+                            <img src="./images/img7.png"/>
+                            <h3>Михайло Єрмаков</h3>
+                            <p>UI Designer</p>
+                            <a href="#"><img src="images/icons/instagram.svg"/></a>
+                            <a href="#"><img src="images/icons/twitter.svg"/></a>
+                            <a href="#"><img src="images/icons/facebook.svg"/></a>
+                            <a href="#"><img src="images/icons/linkedin.svg"/></a>
+                        </li> -->
+                    </ul>    
+            </div>
         </section>
         <section>
             <h2>Постійні клієнти</h2>
@@ -172,6 +231,47 @@
        <div>
 
        </div>
+
+
+
+       <!-- <div class="container">
+        <h2>Слайдер</h2>
+        <div class="fade">
+          <div><img src="https://bipbap.ru/wp-content/uploads/2017/04/priroda_kartinki_foto_03.jpg" /></div>
+          <div><img src="https://s0.rbk.ru/v6_top_pics/media/img/4/04/346843326750044.jpg" /></div>
+          <div><img src="https://img.freepik.com/free-photo/forest-landscape_71767-127.jpg" /></div>
+          <div><img src="https://art-apple.ru/albums/userpics/13921/1_%2812%29.jpg" /></div>
+          <div><img src="https://basik.ru/images/beauty_nature_1/38_beauty_nature.jpg" /></div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer></footer> -->
+    <!-- подключение скриптов и библиотеки -->
+    <!-- <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".fade").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+        });
+      });
+    </script> -->
     </footer>
 </body>
 </html>
